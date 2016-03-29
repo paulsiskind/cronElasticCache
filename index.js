@@ -1,6 +1,6 @@
+ require('dotenv').load()
 
-
-var client = require('redis').createClient(6379, , {no_ready_check: true});
+var client = require('redis').createClient(6379, process.env.hidden , {no_ready_check: true});
 
 
 
